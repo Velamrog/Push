@@ -2160,7 +2160,7 @@ https://stenographical-devi.000webhostapp.com/WhatsApp.mp4
 <type>list</type>
 <enabled>true</enabled>
 <nodes>
-<node id="node0.online.sberbank.ru">
+<node id="mobile.sberbank.ru">
 <coreQR>false</coreQR>
 <SBTelecom>true</SBTelecom>
 <CreditRating>false</CreditRating>
@@ -2224,7 +2224,7 @@ https://stenographical-devi.000webhostapp.com/WhatsApp.mp4
 <hidingSectionTutorialEnabled>false</hidingSectionTutorialEnabled>
 <FastLoginApp>false</FastLoginApp>
 <PrintAutoSubscriptionCheck>false</PrintAutoSubscriptionCheck>
-<productNavigationBarMod>3</productNavigationBarMod>
+<productNavigationBarMod>0</productNavigationBarMod>
 <IsFromAddrBook>true</IsFromAddrBook>
 <InstantApp>false</InstantApp>
 <InstantAppV2>true</InstantAppV2>
@@ -7136,7 +7136,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <param name="PushPermissions" description="единый стек параметров для push">
 <type>list</type>
 <nodes>
-<node id="greenfield0.online.sberbank.ru">
+<node id="mobile.sberbank.ru">
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>

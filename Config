@@ -4922,7 +4922,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 </param>
 <param name="StaticSourceMerchantPics" description="статресурс для логотипов">
 <type>source</type>
-<link>https://pfm-stat.online.sberbank.ru/PFM/logos/</link>
+<link>https://***pfm-stat.online.sberbank.ru/PFM/logos/</link>
 </param>
 <param name="CarLoanRequest" description="Заявка на автокредит с версии 9.3">
 <type>setting</type>
@@ -7192,8 +7192,11 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 </param>
 <param name="PushPermissions" description="единый стек параметров для push">
 <type>list</type>
+
 <nodes>
-<node id="greenfield0.online.sberbank.ru">
+
+<node id="ift-node1-mp.testonline.sberbank.ru">
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>
@@ -7209,118 +7212,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <showUniversalPushNotification>true</showUniversalPushNotification>
 <getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
 </node>
-<node id="greenfield1.online.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
-<node id="node0.online.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
-<node id="node1.online.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
-<node id="node2.online.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
-<node id="node3.online.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
-<node id="node4.online.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
-<node id="psinode1.testonline.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
+
 <node id="mobile.sberbank.ru">
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
@@ -7337,87 +7229,9 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <showUniversalPushNotification>true</showUniversalPushNotification>
 <getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
 </node>
-<node id="194.186.207.23">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
-<node id="ift-node1.testonline.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
-<node id="ift-node2.testonline.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
-<node id="ift-node1-mp.testonline.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
-<node id="ift-node2-mp.testonline.sberbank.ru">
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-</node>
+
 </nodes>
+
 <bestActions>
 <actions>
 <bestActions name="Перевод клиенту Сбербанка" link="sberbankonline://payments/p2p-by-card-number"/>

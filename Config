@@ -7196,7 +7196,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <nodes>
 
 <node id="ift-node1-mp.testonline.sberbank.ru">
-<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<pushLogoTypeUsing>false</pushLogoTypeUsing>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>false</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>

@@ -4922,7 +4922,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 </param>
 <param name="StaticSourceMerchantPics" description="статресурс для логотипов">
 <type>source</type>
-<link>https://***pfm-stat.online.sberbank.ru/PFM/logos/</link>
+<link>https://rrr.ru/PFM/logos/</link>
 </param>
 <param name="CarLoanRequest" description="Заявка на автокредит с версии 9.3">
 <type>setting</type>

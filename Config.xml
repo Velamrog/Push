@@ -7479,6 +7479,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <type>list</type>
 <nodes>
 <node id="mobile.sberbank.ru">
+<newPushProcessingEnabled>true</newPushProcessingEnabled>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>

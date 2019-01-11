@@ -7477,9 +7477,8 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 </param>
 <param name="PushPermissions" description="единый стек параметров для push">
 <type>list</type>
-<nodes>
-<node id="mobile.sberbank.ru">
-<newPushProccessing>true</newPushProccessing>
+<node id="ift-node1-mp.testonline.sberbank.ru">
+<newPushProccessing>false</newPushProccessing>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>
@@ -7495,7 +7494,8 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <showUniversalPushNotification>true</showUniversalPushNotification>
 <getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
 </node>
-<node id="ift-node1-mp.testonline.sberbank.ru">
+<nodes>
+<node id="mobile.sberbank.ru">
 <newPushProccessing>true</newPushProccessing>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>

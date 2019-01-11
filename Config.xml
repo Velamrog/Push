@@ -7496,7 +7496,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
 </node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
-<newPushProccessing>true</newPushProccessing>
+<newPushProccessing>false</newPushProccessing>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>

@@ -602,10 +602,12 @@
 <buttontextcontinue>Продолжить</buttontextcontinue>
 <buttontexttransfer>Перевести</buttontexttransfer>
 </notification>
+ <!--
 <reasonList>
-<reason id="atm"/>
-<reason id="lost"/>
-</reasonList>
+            	<reason id="atm"/>
+              	<reason id="lost"/>
+            </reasonList>
+-->
 </param>
 <param name="CardPANRq" description="Определение типов карт для запроса PAN-номера карты">
 <type>list</type>
@@ -923,7 +925,7 @@
 Неверный логин или пароль. Следующая неверная попытка заблокирует вход в Сбербанк Онлайн на 05 мин
 </old>
 <new>
-Вы ввели неверный пароль. Следующая неверная попытка заблокирует вход на час. Если вы забыли пароль, смените пользователя для повторной регистрации.
+Вы ввели неверный пароль. Следующая неверная попытка заблокирует вход на 05 мин. Если вы забыли пароль, смените пользователя для повторной регистрации.
 </new>
 </string>
 <string>
@@ -1343,21 +1345,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1369,21 +1368,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1395,21 +1391,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1421,21 +1414,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1447,21 +1437,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1473,21 +1460,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1499,21 +1483,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1525,21 +1506,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1551,21 +1529,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1577,21 +1552,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1603,21 +1575,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
 <MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1629,21 +1598,18 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <MessengerMarkdownLinks>true</MessengerMarkdownLinks>
 <MessengerPostcardFirework>true</MessengerPostcardFirework>
 <MessengerPostcardSend>true</MessengerPostcardSend>
-<MessengerPostcardView>true</MessengerPostcardView>
 <MessengerPostcardForNonClient>true</MessengerPostcardForNonClient>
-<MessengerPostcardUGCPhoto>true</MessengerPostcardUGCPhoto>
 <MessengerPostcardUGCVideo>true</MessengerPostcardUGCVideo>
 <MessengerDocDoc>true</MessengerDocDoc>
 <MessengerOpenDialogWithDeepLink>true</MessengerOpenDialogWithDeepLink>
 <MessengerPin>true</MessengerPin>
 <MessengerTyping>true</MessengerTyping>
-<MessengerGroupChat>false</MessengerGroupChat>
+<MessengerGroupChatEnabled>true</MessengerGroupChatEnabled>
+<MessengerGroupChat>true</MessengerGroupChat>
 <MessengerGroupChatAvatarLoadingEnabled>false</MessengerGroupChatAvatarLoadingEnabled>
 <ChatWithBankLikeGroupchat>true</ChatWithBankLikeGroupchat>
 <ChatWithBankNewYearEnabled>true</ChatWithBankNewYearEnabled>
 <MessengerSaveContact>true</MessengerSaveContact>
-<MessengerNewYearPostcard>true</MessengerNewYearPostcard>
-<MessengerDownloadNewYearPostcard>true</MessengerDownloadNewYearPostcard>
 <DraftMessagesEnabled>false</DraftMessagesEnabled>
 <DraftMessage900Enabled>true</DraftMessage900Enabled>
 </node>
@@ -1804,7 +1770,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PFMSimilarSpendings>true</PFMSimilarSpendings>
 <currentPfmApiVersion description="Устаревший параметр">1.30</currentPfmApiVersion>
 <PFMUserParams>true</PFMUserParams>
-<PFMOfferTips>true</PFMOfferTips>
+<PFMOfferTips>false</PFMOfferTips>
 <pfmApiVersion>1.40</pfmApiVersion>
 <minAppVersionFromPFMApiVersion>9.1</minAppVersionFromPFMApiVersion>
 <budget3_0Enabled>true</budget3_0Enabled>
@@ -1816,7 +1782,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PFMSimilarSpendings>true</PFMSimilarSpendings>
 <currentPfmApiVersion description="Устаревший параметр">1.30</currentPfmApiVersion>
 <PFMUserParams>true</PFMUserParams>
-<PFMOfferTips>true</PFMOfferTips>
+<PFMOfferTips>false</PFMOfferTips>
 <pfmApiVersion>1.40</pfmApiVersion>
 <minAppVersionFromPFMApiVersion>9.1</minAppVersionFromPFMApiVersion>
 <budget3_0Enabled>true</budget3_0Enabled>
@@ -2261,6 +2227,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <overseasTransfer>true</overseasTransfer>
 <importantInfoEnabled>false</importantInfoEnabled>
 <historyRouterEnabled>true</historyRouterEnabled>
@@ -2285,7 +2253,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <googleMapsEnabled>false</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="node1.online.sberbank.ru">
@@ -2338,6 +2306,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <charity>
 <enabled>true</enabled>
 <billing>284</billing>
@@ -2371,7 +2341,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <googleMapsEnabled>false</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="node2.online.sberbank.ru">
@@ -2424,6 +2394,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <charity>
 <enabled>true</enabled>
 <billing>284</billing>
@@ -2457,7 +2429,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <googleMapsEnabled>false</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="node3.online.sberbank.ru">
@@ -2510,6 +2482,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <charity>
 <enabled>true</enabled>
 <billing>284</billing>
@@ -2543,7 +2517,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>false</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="greenfield1.online.sberbank.ru">
@@ -2597,6 +2571,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <charity>
 <enabled>true</enabled>
 <billing>284</billing>
@@ -2630,7 +2606,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>true</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="greenfield2.online.sberbank.ru">
@@ -2684,6 +2660,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <charity>
 <enabled>true</enabled>
 <billing>284</billing>
@@ -2718,7 +2696,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>true</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="mobile.sberbank.ru">
@@ -2772,6 +2750,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <charity>
 <enabled>true</enabled>
 <billing>4</billing>
@@ -2806,7 +2786,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <googleMapsEnabled>false</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="ift-node1.testonline.sberbank.ru">
@@ -2860,6 +2840,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <overseasTransfer>true</overseasTransfer>
 <importantInfoEnabled>false</importantInfoEnabled>
 <historyRouterEnabled>true</historyRouterEnabled>
@@ -2885,7 +2867,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>true</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="ift-node2.testonline.sberbank.ru">
@@ -2939,6 +2921,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <overseasTransfer>true</overseasTransfer>
 <importantInfoEnabled>false</importantInfoEnabled>
 <historyRouterEnabled>true</historyRouterEnabled>
@@ -2964,7 +2948,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>true</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="ift-node5.testonline.sberbank.ru">
@@ -3018,6 +3002,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <overseasTransfer>true</overseasTransfer>
 <importantInfoEnabled>false</importantInfoEnabled>
 <historyRouterEnabled>true</historyRouterEnabled>
@@ -3043,7 +3029,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>false</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
@@ -3097,6 +3083,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <overseasTransfer>true</overseasTransfer>
 <importantInfoEnabled>false</importantInfoEnabled>
 <historyRouterEnabled>true</historyRouterEnabled>
@@ -3121,7 +3109,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <newProductDetailsContentEnabled>true</newProductDetailsContentEnabled>
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="ift-node2-mp.testonline.sberbank.ru">
@@ -3175,6 +3163,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <overseasTransfer>true</overseasTransfer>
 <importantInfoEnabled>false</importantInfoEnabled>
 <historyRouterEnabled>true</historyRouterEnabled>
@@ -3200,7 +3190,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>true</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="ift-node5-mp.testonline.sberbank.ru">
@@ -3254,6 +3244,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <overseasTransfer>true</overseasTransfer>
 <importantInfoEnabled>false</importantInfoEnabled>
 <historyRouterEnabled>true</historyRouterEnabled>
@@ -3279,7 +3271,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>false</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="10.21.152.7">
@@ -3332,6 +3324,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <overseasTransfer>true</overseasTransfer>
 <importantInfoEnabled>false</importantInfoEnabled>
 <historyRouterEnabled>true</historyRouterEnabled>
@@ -3357,7 +3351,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>false</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 <node id="ift-node4-mp.testonline.sberbank.ru">
@@ -3411,6 +3405,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <EribStatePaymentShortCutsEnabled>true</EribStatePaymentShortCutsEnabled>
 <EribAfterPayInfoEnabled>true</EribAfterPayInfoEnabled>
 <EribServicesDeeplinkEnabled>true</EribServicesDeeplinkEnabled>
+<EribPenaltyInPaymentProcessEnabled>true</EribPenaltyInPaymentProcessEnabled>
+<EribPenaltyDocumentsMigration>true</EribPenaltyDocumentsMigration>
 <overseasTransfer>true</overseasTransfer>
 <importantInfoEnabled>false</importantInfoEnabled>
 <historyRouterEnabled>true</historyRouterEnabled>
@@ -3436,7 +3432,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>false</googleMapsEnabled>
-<messengerFirstLoginEnabled>true</messengerFirstLoginEnabled>
+<messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
 <authBlockingScreen>true</authBlockingScreen>
 </node>
 </nodes>
@@ -3983,19 +3979,19 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <limit>2147483647</limit>
 <closed>true</closed>
 <opened>false</opened>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreen>
 <successScreen>
 <enabled>true</enabled>
 <limit>2147483647</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </successScreen>
 <mainScreenStories>
 <enabled>true</enabled>
 <limit>2147483647</limit>
 <closed>false</closed>
 <opened>false</opened>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 <title>Рекомендуем</title>
 <no_offers_text>
 Для вас пока нет рекомендаций, но они скоро появятся
@@ -4007,6 +4003,11 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <cachePermissions>true</cachePermissions>
 <reloadSection>true</reloadSection>
 </mainScreenStories>
+<mainScreenTutorial>
+<enabled>true</enabled>
+<limit>3</limit>
+<backendTipsBroker>false</backendTipsBroker>
+</mainScreenTutorial>
 <marketplaceStories>
 <enabled>true</enabled>
 <limit>2147483647</limit>
@@ -4022,11 +4023,6 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <lifetimeOfCachePermissions>7</lifetimeOfCachePermissions>
 <cachePermissions>true</cachePermissions>
 </marketplaceStories>
-<mainScreenTutorial>
-<enabled>true</enabled>
-<limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
-</mainScreenTutorial>
 <paymentsHistoryScreen>
 <enabled>true</enabled>
 <limit>1</limit>
@@ -4038,7 +4034,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <minSumRUB>500</minSumRUB>
 <maxSumRUB>100000000</maxSumRUB>
 <termDays>365</termDays>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </paymentsHistoryScreen>
 </node>
 <node id="ift-node2.testonline.sberbank.ru">
@@ -4082,7 +4078,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <mainScreenTutorial>
 <enabled>true</enabled>
 <limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
 <marketplaceStories>
 <enabled>true</enabled>
@@ -4126,7 +4122,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <limit>2147483647</limit>
 <closed>true</closed>
 <opened>false</opened>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreen>
 <successScreen>
 <enabled>true</enabled>
@@ -4138,7 +4134,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <limit>2147483647</limit>
 <closed>false</closed>
 <opened>false</opened>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 <title>Рекомендуем</title>
 <no_offers_text>
 Для вас пока нет рекомендаций, но они скоро появятся
@@ -4153,7 +4149,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <mainScreenTutorial>
 <enabled>true</enabled>
 <limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
 <marketplaceStories>
 <enabled>true</enabled>
@@ -4181,7 +4177,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <minSumRUB>500</minSumRUB>
 <maxSumRUB>100000000</maxSumRUB>
 <termDays>365</termDays>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </paymentsHistoryScreen>
 </node>
 <node id="ift-node2-mp.testonline.sberbank.ru">
@@ -4224,7 +4220,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <mainScreenTutorial>
 <enabled>true</enabled>
 <limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
 <marketplaceStories>
 <enabled>true</enabled>
@@ -4295,7 +4291,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <mainScreenTutorial>
 <enabled>true</enabled>
 <limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
 <paymentsHistoryScreen>
 <enabled>true</enabled>
@@ -4350,7 +4346,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <mainScreenTutorial>
 <enabled>true</enabled>
 <limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
 <paymentsHistoryScreen>
 <enabled>true</enabled>
@@ -4405,7 +4401,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <mainScreenTutorial>
 <enabled>true</enabled>
 <limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
 <paymentsHistoryScreen>
 <enabled>true</enabled>
@@ -4460,7 +4456,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <mainScreenTutorial>
 <enabled>true</enabled>
 <limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
 <paymentsHistoryScreen>
 <enabled>true</enabled>
@@ -4515,7 +4511,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <mainScreenTutorial>
 <enabled>true</enabled>
 <limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
 <paymentsHistoryScreen>
 <enabled>true</enabled>
@@ -4570,7 +4566,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <mainScreenTutorial>
 <enabled>true</enabled>
 <limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
 <paymentsHistoryScreen>
 <enabled>true</enabled>
@@ -4625,7 +4621,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <mainScreenTutorial>
 <enabled>true</enabled>
 <limit>3</limit>
-<backendTipsBroker>true</backendTipsBroker>
+<backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
 <paymentsHistoryScreen>
 <enabled>true</enabled>
@@ -5530,6 +5526,17 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 </service>
 </services>
 <CCVersions>
+<version id="9.7">
+<enabled>true</enabled>
+<calculateCC>true</calculateCC>
+<showcase>true</showcase>
+<loanApplication>true</loanApplication>
+<creditCardApplication>true</creditCardApplication>
+<CCTutorial>true</CCTutorial>
+<CCOperationHistory>true</CCOperationHistory>
+<calculateCCDeeplink>true</calculateCCDeeplink>
+<showcaseDeeplink>true</showcaseDeeplink>
+</version>
 <version id="9.6">
 <enabled>true</enabled>
 <calculateCC>true</calculateCC>
@@ -7071,15 +7078,15 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 </nodes>
 </param>
 <param name="BiometricsLivenessChecks" description="Настройки проверок на человечность в биометрических процессах">
-<enabled>true</enabled>
+<enabled>false</enabled>
 <processes>
 <process name="ConfirmationBiometrics">
-<enabled>true</enabled>
+<enabled>false</enabled>
 <livenessType>BLINK</livenessType>
 </process>
 <process name="BiometricsTemplateCreate">
-<enabled>true</enabled>
-<livenessType>MOVE|BLINK</livenessType>
+<enabled>false</enabled>
+<livenessType>HEADMOVE|BLINK</livenessType>
 </process>
 </processes>
 </param>
@@ -7477,10 +7484,10 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 </param>
 <param name="PushPermissions" description="единый стек параметров для push">
 <type>list</type>
-
+<nodes>
+ 
 <node id="ift-node1-mp.testonline.sberbank.ru">
 <webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
-<newPushProccessing>false</newPushProccessing>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>
@@ -7495,11 +7502,10 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
 <showUniversalPushNotification>true</showUniversalPushNotification>
 <getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<newPushProccessing>true</newPushProccessing>
 </node>
 
-<nodes>
-<node id="mobile.sberbank.ru">
-<newPushProccessing>true</newPushProccessing>
+<node id="ift-node2-mp.testonline.sberbank.ru">
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>
@@ -7514,6 +7520,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
 <showUniversalPushNotification>true</showUniversalPushNotification>
 <getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<newPushProccessing>true</newPushProccessing>
 </node>
 </nodes>
 <bestActions>
@@ -7648,6 +7655,42 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 </nodes>
 </param>
 <param name="MomentumCardEndDateMessage" description="Окончание срока действия карты Моментум">
+<type>service</type>
+<enabled>true</enabled>
+<nodes>
+<node id="greenfield1.online.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="greenfield2.online.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="mobile.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="ift-node1.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="ift-node2.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="ift-node1-mp.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="ift-node2-mp.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="psinode2.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="psinode1.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="194.186.207.23">
+<enabled>true</enabled>
+</node>
+</nodes>
+</param>
+<param name="MomentumCardEndDateMessageV2" description="Окончание срока действия карты Моментум НОВЫЙ, начиная с 9.6">
 <type>service</type>
 <enabled>true</enabled>
 <nodes>
@@ -8116,6 +8159,9 @@ https://test.stat.online.sberbank.ru/WESTERNUNION/Oferta_Western_Union_a2a.pdf
 <version name="9.6.0">
 <enabled>true</enabled>
 </version>
+<version name="9.7.0">
+<enabled>true</enabled>
+</version>
 </sendVersions>
 <receiveVersions>
 <version name="9.4.0">
@@ -8125,6 +8171,9 @@ https://test.stat.online.sberbank.ru/WESTERNUNION/Oferta_Western_Union_a2a.pdf
 <enabled>true</enabled>
 </version>
 <version name="9.6.0">
+<enabled>true</enabled>
+</version>
+<version name="9.7.0">
 <enabled>true</enabled>
 </version>
 </receiveVersions>

@@ -8448,6 +8448,7 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <nodes>
  
 <node id="ift-node1-mp.testonline.sberbank.ru">
+ <newPushProccessing>true</newPushProccessing>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>

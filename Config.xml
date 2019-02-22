@@ -2728,31 +2728,8 @@ The entered ID is already in use in the system. Enter a different value
 <pushAlertTimeInterval>60</pushAlertTimeInterval>
 <efsMobileBank>true</efsMobileBank>
 <nodes>
-<node id="node0.online.sberbank.ru">
-<pushAlertEnabled>true</pushAlertEnabled>
-<efsMobileBank>true</efsMobileBank>
-</node>
-<node id="node1.online.sberbank.ru">
-<pushAlertEnabled>true</pushAlertEnabled>
-<efsMobileBank>true</efsMobileBank>
-</node>
-<node id="node2.online.sberbank.ru">
-<pushAlertEnabled>true</pushAlertEnabled>
-<efsMobileBank>true</efsMobileBank>
-</node>
-<node id="node3.online.sberbank.ru">
-<pushAlertEnabled>true</pushAlertEnabled>
-<efsMobileBank>true</efsMobileBank>
-</node>
-<node id="greenfield1.online.sberbank.ru">
-<pushAlertEnabled>true</pushAlertEnabled>
-<efsMobileBank>true</efsMobileBank>
-</node>
-<node id="194.186.207.23">
-<pushAlertEnabled>true</pushAlertEnabled>
-<efsMobileBank>true</efsMobileBank>
-</node>
-<node id="mobile.sberbank.ru">
+
+<node id="ift-node1-mp.testonline.sberbank.ru">
 <pushAlertEnabled>true</pushAlertEnabled>
 <efsMobileBank>true</efsMobileBank>
 </node>

@@ -483,7 +483,7 @@
 <CardPANRq id="MasterCard Социальная Бесконтактная"/>
 <CardPANRq id="MIR Premium Plus"/>
 <CardPANRq id="Visa Gold"/>
-
+<CardPANRq id="World MasterCard "Золотой""/>
 <CardPANRq id="Electron"/>
 <CardPANRq id="MasterCard Gold"/>
 </CardPANRqList>
@@ -512,7 +512,7 @@
 <cardCvv id="MasterCard Standard Бесконтактная"/>
 <cardCvv id="MasterCard Социальная Бесконтактная"/>
 <cardCvv id="MIR Premium Plus"/>
-
+<cardCvv id="World MasterCard "Золотой""/>
 <cardCvv id="Electron"/>
 <cardCvv id="MasterCard Gold"/>
 </cardCvvList>
@@ -542,7 +542,7 @@
 <cardCvv id="MasterCard Социальная Бесконтактная"/>
 <cardCvv id="MIR Premium Plus"/>
 <cardCvv id="Visa Gold"/>
-
+<cardCvv id="World MasterCard "Золотой""/>
 <cardCvv id="Electron"/>
 <cardCvv id="MasterCard Gold"/>
 </cardCvvList>
@@ -571,6 +571,7 @@
 <cardBlock id="Visa Classic"/>
 <cardBlock id="Visa Gold"/>
 
+<cardBlock id="World MasterCard "Золотой""/>
 <cardBlock id="MasterCard Mass"/>
 <cardBlock id="MasterCard Gold"/>
 <cardBlock id="Maestro"/>
@@ -636,7 +637,7 @@
 <CardPANRq id="MasterCard Standard Бесконтактная"/>
 <CardPANRq id="MasterCard Социальная Бесконтактная"/>
 <CardPANRq id="MIR Premium Plus"/>
-
+<CardPANRq id="World MasterCard "Золотой""/>
 <CardPANRq id="Electron"/>
 <CardPANRq id="MasterCard Gold"/>
 </CardPANRqList>
@@ -2727,8 +2728,31 @@ The entered ID is already in use in the system. Enter a different value
 <pushAlertTimeInterval>60</pushAlertTimeInterval>
 <efsMobileBank>true</efsMobileBank>
 <nodes>
-
-<node id="ift-node1-mp.testonline.sberbank.ru">
+<node id="node0.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+<efsMobileBank>true</efsMobileBank>
+</node>
+<node id="node1.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+<efsMobileBank>true</efsMobileBank>
+</node>
+<node id="node2.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+<efsMobileBank>true</efsMobileBank>
+</node>
+<node id="node3.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+<efsMobileBank>true</efsMobileBank>
+</node>
+<node id="greenfield1.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+<efsMobileBank>true</efsMobileBank>
+</node>
+<node id="194.186.207.23">
+<pushAlertEnabled>true</pushAlertEnabled>
+<efsMobileBank>true</efsMobileBank>
+</node>
+<node id="mobile.sberbank.ru">
 <pushAlertEnabled>true</pushAlertEnabled>
 <efsMobileBank>true</efsMobileBank>
 </node>
@@ -4965,9 +4989,203 @@ https://eis.online.sberbank.ru:9443/ext-integration-service-app/tokens/confirmOf
 <operationTypeList>D4</operationTypeList>
 <pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
 <nodes>
-
+<node id="mobile.sberbank.ru">
+<excludeNotificationTypesFromBadgeInPreLogin>2,3,4,5,6,7,8,9,10</excludeNotificationTypesFromBadgeInPreLogin>
+<doNotContainTPUInBadgeNewNotificationEntryPoint>false</doNotContainTPUInBadgeNewNotificationEntryPoint>
+<doNotShowOldNotificationEntryPoint>false</doNotShowOldNotificationEntryPoint>
+<showNewNotificationEntryPoint>true</showNewNotificationEntryPoint>
+<showNewNotificationEntryPointWS>true</showNewNotificationEntryPointWS>
+<newFailedOperationDesign>true</newFailedOperationDesign>
+<showOperationTypeInTPU>true</showOperationTypeInTPU>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<alternativePushSettingTexts>true</alternativePushSettingTexts>
+<pushPreEnrichment>true</pushPreEnrichment>
+<updateTokenForegroundService>true</updateTokenForegroundService>
+<showSmsTextInCuteCheque>true</showSmsTextInCuteCheque>
+<newNotificationDesign>true</newNotificationDesign>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+<scanActivationWithPush>true</scanActivationWithPush>
+<transferTPUSettingsOnNewRegistration>
+<version from="9.4" value="true"/>
+</transferTPUSettingsOnNewRegistration>
+<instantAccessToNotificationEntryPoint>
+<version from="9.4" value="true"/>
+</instantAccessToNotificationEntryPoint>
+<pushSkipInitialSync>
+<version from="9.2" value="true"/>
+</pushSkipInitialSync>
+<notificationDesign_2019_01>
+<version from="9.2" value="true"/>
+</notificationDesign_2019_01>
+<hideMainPushNotificationsSwitcher>
+<version from="9.2" value="true"/>
+</hideMainPushNotificationsSwitcher>
+<notificationShowWithOperationType>
+<version from="9.1" value="true"/>
+</notificationShowWithOperationType>
+<webUrlInUniversalPushNotification>
+<version from="9.2" value="true"/>
+</webUrlInUniversalPushNotification>
+<requestPermissionToReadSMS>
+<version from="8.5" value="true"/>
+</requestPermissionToReadSMS>
+<reactivateMainPushNotifications>
+<version from="8.6" value="true"/>
+</reactivateMainPushNotifications>
+<showNewAttributesInPushContent>
+<version from="8.5" value="true"/>
+</showNewAttributesInPushContent>
+<pushLogoTypeUsing>
+<version from="8.6" value="true"/>
+</pushLogoTypeUsing>
+<showUniversalPushNotification>
+<version from="8.7" value="true"/>
+</showUniversalPushNotification>
+<preloginTargetTapNotificationEnabled>true</preloginTargetTapNotificationEnabled>
+<snackBarWithLastTPU>
+<version from="8.7" value="true"/>
+</snackBarWithLastTPU>
+<cardNotificationWithSenderNameAndComment>
+<version from="9.0" value="true"/>
+</cardNotificationWithSenderNameAndComment>
+<cardNotificationTapShowsDialog>
+<version from="9.0" value="true"/>
+</cardNotificationTapShowsDialog>
+<snackBarIgnoreTPUOlderDays>14</snackBarIgnoreTPUOlderDays>
+<snackBarDisplayTime>2</snackBarDisplayTime>
+</node>
+<node id="ift-node1.testonline.sberbank.ru">
+<excludeNotificationTypesFromBadgeInPreLogin>10</excludeNotificationTypesFromBadgeInPreLogin>
+<doNotContainTPUInBadgeNewNotificationEntryPoint>false</doNotContainTPUInBadgeNewNotificationEntryPoint>
+<showNewNotificationEntryPoint>true</showNewNotificationEntryPoint>
+<showNewNotificationEntryPointWS>true</showNewNotificationEntryPointWS>
+<newFailedOperationDesign>true</newFailedOperationDesign>
+<showOperationTypeInTPU>true</showOperationTypeInTPU>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<alternativePushSettingTexts>true</alternativePushSettingTexts>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<pushPreEnrichment>false</pushPreEnrichment>
+<updateTokenForegroundService>true</updateTokenForegroundService>
+<showSmsTextInCuteCheque>true</showSmsTextInCuteCheque>
+<newNotificationDesign>true</newNotificationDesign>
+<showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+<scanActivationWithPush>true</scanActivationWithPush>
+<transferTPUSettingsOnNewRegistration>
+<version from="9.4" value="true"/>
+</transferTPUSettingsOnNewRegistration>
+<instantAccessToNotificationEntryPoint>
+<version from="9.4" value="false"/>
+</instantAccessToNotificationEntryPoint>
+<pushSkipInitialSync>
+<version from="9.2" value="true"/>
+</pushSkipInitialSync>
+<notificationDesign_2019_01>
+<version from="9.2" value="true"/>
+</notificationDesign_2019_01>
+<hideMainPushNotificationsSwitcher>
+<version from="9.2" value="true"/>
+</hideMainPushNotificationsSwitcher>
+<notificationShowWithOperationType>
+<version from="9.1" value="true"/>
+</notificationShowWithOperationType>
+<webUrlInUniversalPushNotification>
+<version from="9.2" value="true"/>
+</webUrlInUniversalPushNotification>
+<requestPermissionToReadSMS>
+<version from="8.5" value="true"/>
+</requestPermissionToReadSMS>
+<reactivateMainPushNotifications>
+<version from="8.6" value="true"/>
+</reactivateMainPushNotifications>
+<showNewAttributesInPushContent>
+<version from="8.5" value="true"/>
+</showNewAttributesInPushContent>
+<pushLogoTypeUsing>
+<version from="8.6" value="true"/>
+</pushLogoTypeUsing>
+<showUniversalPushNotification>
+<version from="8.7" value="true"/>
+</showUniversalPushNotification>
+<preloginTargetTapNotificationEnabled>true</preloginTargetTapNotificationEnabled>
+<snackBarWithLastTPU>
+<version from="8.7" value="true"/>
+</snackBarWithLastTPU>
+<cardNotificationWithSenderNameAndComment>
+<version from="9.0" value="true"/>
+</cardNotificationWithSenderNameAndComment>
+<cardNotificationTapShowsDialog>
+<version from="9.0" value="true"/>
+</cardNotificationTapShowsDialog>
+<snackBarIgnoreTPUOlderDays>14</snackBarIgnoreTPUOlderDays>
+<snackBarDisplayTime>2</snackBarDisplayTime>
+</node>
+<node id="ift-node2.testonline.sberbank.ru">
+<excludeNotificationTypesFromBadgeInPreLogin>2,3,4,5,6,7,8,9,10</excludeNotificationTypesFromBadgeInPreLogin>
+<doNotContainTPUInBadgeNewNotificationEntryPoint>false</doNotContainTPUInBadgeNewNotificationEntryPoint>
+<showNewNotificationEntryPoint>true</showNewNotificationEntryPoint>
+<showNewNotificationEntryPointWS>true</showNewNotificationEntryPointWS>
+<newFailedOperationDesign>true</newFailedOperationDesign>
+<showOperationTypeInTPU>true</showOperationTypeInTPU>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<alternativePushSettingTexts>true</alternativePushSettingTexts>
+<pushPreEnrichment>false</pushPreEnrichment>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<updateTokenForegroundService>true</updateTokenForegroundService>
+<showSmsTextInCuteCheque>true</showSmsTextInCuteCheque>
+<newNotificationDesign>true</newNotificationDesign>
+<scanActivationWithPush>true</scanActivationWithPush>
+<showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+<transferTPUSettingsOnNewRegistration>
+<version from="9.4" value="true"/>
+</transferTPUSettingsOnNewRegistration>
+<instantAccessToNotificationEntryPoint>
+<version from="9.4" value="true"/>
+</instantAccessToNotificationEntryPoint>
+<pushSkipInitialSync>
+<version from="9.2" value="true"/>
+</pushSkipInitialSync>
+<notificationDesign_2019_01>
+<version from="9.2" value="true"/>
+</notificationDesign_2019_01>
+<hideMainPushNotificationsSwitcher>
+<version from="9.2" value="true"/>
+</hideMainPushNotificationsSwitcher>
+<notificationShowWithOperationType>
+<version from="9.1" value="true"/>
+</notificationShowWithOperationType>
+<webUrlInUniversalPushNotification>
+<version from="9.2" value="true"/>
+</webUrlInUniversalPushNotification>
+<requestPermissionToReadSMS>
+<version from="8.5" value="true"/>
+</requestPermissionToReadSMS>
+<reactivateMainPushNotifications>
+<version from="8.6" value="true"/>
+</reactivateMainPushNotifications>
+<showNewAttributesInPushContent>
+<version from="8.5" value="true"/>
+</showNewAttributesInPushContent>
+<pushLogoTypeUsing>
+<version from="8.6" value="true"/>
+</pushLogoTypeUsing>
+<showUniversalPushNotification>
+<version from="8.7" value="true"/>
+</showUniversalPushNotification>
+<preloginTargetTapNotificationEnabled>true</preloginTargetTapNotificationEnabled>
+<snackBarWithLastTPU>
+<version from="8.7" value="true"/>
+</snackBarWithLastTPU>
+<cardNotificationWithSenderNameAndComment>
+<version from="9.0" value="true"/>
+</cardNotificationWithSenderNameAndComment>
+<cardNotificationTapShowsDialog>
+<version from="9.0" value="true"/>
+</cardNotificationTapShowsDialog>
+<snackBarIgnoreTPUOlderDays>14</snackBarIgnoreTPUOlderDays>
+<snackBarDisplayTime>2</snackBarDisplayTime>
+</node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
 <excludeNotificationTypesFromBadgeInPreLogin>10</excludeNotificationTypesFromBadgeInPreLogin>
 <doNotContainTPUInBadgeNewNotificationEntryPoint>false</doNotContainTPUInBadgeNewNotificationEntryPoint>
 <showNewNotificationEntryPoint>true</showNewNotificationEntryPoint>
@@ -5002,7 +5220,7 @@ https://eis.online.sberbank.ru:9443/ext-integration-service-app/tokens/confirmOf
 <version from="9.1" value="true"/>
 </notificationShowWithOperationType>
 <webUrlInUniversalPushNotification>
-<version from="9.2" value="false"/>
+<version from="9.2" value="true"/>
 </webUrlInUniversalPushNotification>
 <requestPermissionToReadSMS>
 <version from="8.5" value="true"/>
@@ -5032,7 +5250,181 @@ https://eis.online.sberbank.ru:9443/ext-integration-service-app/tokens/confirmOf
 <snackBarIgnoreTPUOlderDays>14</snackBarIgnoreTPUOlderDays>
 <snackBarDisplayTime>2</snackBarDisplayTime>
 </node>
-
+<node id="ift-node2-mp.testonline.sberbank.ru">
+<excludeNotificationTypesFromBadgeInPreLogin>2,3,4,5,6,7,8,9,10</excludeNotificationTypesFromBadgeInPreLogin>
+<doNotContainTPUInBadgeNewNotificationEntryPoint>false</doNotContainTPUInBadgeNewNotificationEntryPoint>
+<showNewNotificationEntryPoint>true</showNewNotificationEntryPoint>
+<showNewNotificationEntryPointWS>true</showNewNotificationEntryPointWS>
+<newFailedOperationDesign>true</newFailedOperationDesign>
+<showOperationTypeInTPU>true</showOperationTypeInTPU>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<alternativePushSettingTexts>true</alternativePushSettingTexts>
+<pushPreEnrichment>false</pushPreEnrichment>
+<updateTokenForegroundService>true</updateTokenForegroundService>
+<showSmsTextInCuteCheque>true</showSmsTextInCuteCheque>
+<newNotificationDesign>true</newNotificationDesign>
+<scanActivationWithPush>true</scanActivationWithPush>
+<showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+<transferTPUSettingsOnNewRegistration>
+<version from="9.4" value="true"/>
+</transferTPUSettingsOnNewRegistration>
+<instantAccessToNotificationEntryPoint>
+<version from="9.4" value="true"/>
+</instantAccessToNotificationEntryPoint>
+<pushSkipInitialSync>
+<version from="9.2" value="true"/>
+</pushSkipInitialSync>
+<notificationDesign_2019_01>
+<version from="9.2" value="true"/>
+</notificationDesign_2019_01>
+<hideMainPushNotificationsSwitcher>
+<version from="9.2" value="true"/>
+</hideMainPushNotificationsSwitcher>
+<notificationShowWithOperationType>
+<version from="9.1" value="true"/>
+</notificationShowWithOperationType>
+<webUrlInUniversalPushNotification>
+<version from="9.2" value="true"/>
+</webUrlInUniversalPushNotification>
+<requestPermissionToReadSMS>
+<version from="8.5" value="true"/>
+</requestPermissionToReadSMS>
+<pushLogoTypeUsing>
+<version from="8.6" value="true"/>
+</pushLogoTypeUsing>
+<reactivateMainPushNotifications>
+<version from="8.6" value="true"/>
+</reactivateMainPushNotifications>
+<showNewAttributesInPushContent>
+<version from="8.5" value="true"/>
+</showNewAttributesInPushContent>
+<showUniversalPushNotification>
+<version from="8.7" value="true"/>
+</showUniversalPushNotification>
+<preloginTargetTapNotificationEnabled>true</preloginTargetTapNotificationEnabled>
+<snackBarWithLastTPU>
+<version from="8.7" value="true"/>
+</snackBarWithLastTPU>
+<cardNotificationWithSenderNameAndComment>
+<version from="9.0" value="true"/>
+</cardNotificationWithSenderNameAndComment>
+<cardNotificationTapShowsDialog>
+<version from="9.0" value="true"/>
+</cardNotificationTapShowsDialog>
+<snackBarIgnoreTPUOlderDays>14</snackBarIgnoreTPUOlderDays>
+<snackBarDisplayTime>2</snackBarDisplayTime>
+</node>
+<node id="node4.online.sberbank.ru">
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<alternativePushSettingTexts>true</alternativePushSettingTexts>
+<pushPreEnrichment>false</pushPreEnrichment>
+<updateTokenForegroundService>true</updateTokenForegroundService>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<scanActivationWithPush>true</scanActivationWithPush>
+<transferTPUSettingsOnNewRegistration>
+<version from="9.4" value="true"/>
+</transferTPUSettingsOnNewRegistration>
+<instantAccessToNotificationEntryPoint>
+<version from="9.4" value="true"/>
+</instantAccessToNotificationEntryPoint>
+<pushSkipInitialSync>
+<version from="9.2" value="true"/>
+</pushSkipInitialSync>
+<notificationDesign_2019_01>
+<version from="9.2" value="true"/>
+</notificationDesign_2019_01>
+<hideMainPushNotificationsSwitcher>
+<version from="9.2" value="true"/>
+</hideMainPushNotificationsSwitcher>
+<notificationShowWithOperationType>
+<version from="9.1" value="true"/>
+</notificationShowWithOperationType>
+<showUniversalPushNotification>
+<version from="8.7" value="true"/>
+</showUniversalPushNotification>
+<preloginTargetTapNotificationEnabled>true</preloginTargetTapNotificationEnabled>
+<snackBarWithLastTPU>
+<version from="8.7" value="true"/>
+</snackBarWithLastTPU>
+<cardNotificationWithSenderNameAndComment>
+<version from="9.0" value="true"/>
+</cardNotificationWithSenderNameAndComment>
+<cardNotificationTapShowsDialog>
+<version from="9.0" value="true"/>
+</cardNotificationTapShowsDialog>
+<webUrlInUniversalPushNotification>
+<version from="9.2" value="true"/>
+</webUrlInUniversalPushNotification>
+<snackBarIgnoreTPUOlderDays>14</snackBarIgnoreTPUOlderDays>
+<snackBarDisplayTime>2</snackBarDisplayTime>
+</node>
+<node id="greenfield1.online.sberbank.ru">
+<excludeNotificationTypesFromBadgeInPreLogin>1,2,3,4,5,6,7,8,9,10</excludeNotificationTypesFromBadgeInPreLogin>
+<doNotContainTPUInBadgeNewNotificationEntryPoint>false</doNotContainTPUInBadgeNewNotificationEntryPoint>
+<doNotShowOldNotificationEntryPoint>false</doNotShowOldNotificationEntryPoint>
+<showNewNotificationEntryPoint>true</showNewNotificationEntryPoint>
+<showNewNotificationEntryPointWS>true</showNewNotificationEntryPointWS>
+<newFailedOperationDesign>true</newFailedOperationDesign>
+<showOperationTypeInTPU>true</showOperationTypeInTPU>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<alternativePushSettingTexts>true</alternativePushSettingTexts>
+<pushPreEnrichment>true</pushPreEnrichment>
+<updateTokenForegroundService>true</updateTokenForegroundService>
+<showSmsTextInCuteCheque>true</showSmsTextInCuteCheque>
+<newNotificationDesign>true</newNotificationDesign>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<scanActivationWithPush>true</scanActivationWithPush>
+<transferTPUSettingsOnNewRegistration>
+<version from="9.4" value="true"/>
+</transferTPUSettingsOnNewRegistration>
+<instantAccessToNotificationEntryPoint>
+<version from="9.4" value="true"/>
+</instantAccessToNotificationEntryPoint>
+<pushSkipInitialSync>
+<version from="9.2" value="true"/>
+</pushSkipInitialSync>
+<notificationDesign_2019_01>
+<version from="9.2" value="true"/>
+</notificationDesign_2019_01>
+<hideMainPushNotificationsSwitcher>
+<version from="9.2" value="true"/>
+</hideMainPushNotificationsSwitcher>
+<showCuteChequeWithoutMerchantName>true</showCuteChequeWithoutMerchantName>
+<notificationShowWithOperationType>
+<version from="9.1" value="true"/>
+</notificationShowWithOperationType>
+<requestPermissionToReadSMS>
+<version from="8.5" value="true"/>
+</requestPermissionToReadSMS>
+<reactivateMainPushNotifications>
+<version from="8.6" value="true"/>
+</reactivateMainPushNotifications>
+<showNewAttributesInPushContent>
+<version from="8.5" value="true"/>
+</showNewAttributesInPushContent>
+<pushLogoTypeUsing>
+<version from="8.6" value="true"/>
+</pushLogoTypeUsing>
+<showUniversalPushNotification>
+<version from="8.7" value="true"/>
+</showUniversalPushNotification>
+<preloginTargetTapNotificationEnabled>true</preloginTargetTapNotificationEnabled>
+<snackBarWithLastTPU>
+<version from="8.7" value="true"/>
+</snackBarWithLastTPU>
+<cardNotificationWithSenderNameAndComment>
+<version from="9.0" value="true"/>
+</cardNotificationWithSenderNameAndComment>
+<cardNotificationTapShowsDialog>
+<version from="9.0" value="true"/>
+</cardNotificationTapShowsDialog>
+<webUrlInUniversalPushNotification>
+<version from="9.2" value="true"/>
+</webUrlInUniversalPushNotification>
+<snackBarIgnoreTPUOlderDays>14</snackBarIgnoreTPUOlderDays>
+<snackBarDisplayTime>2</snackBarDisplayTime>
+</node>
 </nodes>
 </param>
 <param name="NotificationsEnableSuggestion" description="Включение таргетированного баннера для подключения МБ">

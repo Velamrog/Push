@@ -483,7 +483,7 @@
 <CardPANRq id="MasterCard Социальная Бесконтактная"/>
 <CardPANRq id="MIR Premium Plus"/>
 <CardPANRq id="Visa Gold"/>
-<CardPANRq id="World MasterCard "Золотой""/>
+<CardPANRq id="World MasterCard Золотой"/>
 <CardPANRq id="Electron"/>
 <CardPANRq id="MasterCard Gold"/>
 </CardPANRqList>
@@ -507,12 +507,12 @@
 <cardCvv id="Visa Platinum PREMIER"/>
 <cardCvv id="MasterCard World Black Edition PREMIER"/>
 <cardCvv id="Visa Signature"/>
-<cardCvv id="Visa Gold "Золотой""/>
+<cardCvv id="Visa Gold Золотой"/>
 <cardCvv id="Maestro"/>
 <cardCvv id="MasterCard Standard Бесконтактная"/>
 <cardCvv id="MasterCard Социальная Бесконтактная"/>
 <cardCvv id="MIR Premium Plus"/>
-<cardCvv id="World MasterCard "Золотой""/>
+<cardCvv id="World MasterCard Золотой"/>
 <cardCvv id="Electron"/>
 <cardCvv id="MasterCard Gold"/>
 </cardCvvList>
@@ -536,13 +536,13 @@
 <cardCvv id="Visa Platinum PREMIER"/>
 <cardCvv id="MasterCard World Black Edition PREMIER"/>
 <cardCvv id="Visa Signature"/>
-<cardCvv id="Visa Gold "Золотой""/>
+<cardCvv id="Visa Gold Золотой"/>
 <cardCvv id="Maestro"/>
 <cardCvv id="MasterCard Standard Бесконтактная"/>
 <cardCvv id="MasterCard Социальная Бесконтактная"/>
 <cardCvv id="MIR Premium Plus"/>
 <cardCvv id="Visa Gold"/>
-<cardCvv id="World MasterCard "Золотой""/>
+<cardCvv id="World MasterCard Золотой"/>
 <cardCvv id="Electron"/>
 <cardCvv id="MasterCard Gold"/>
 </cardCvvList>
@@ -570,8 +570,8 @@
 <cardBlockList>
 <cardBlock id="Visa Classic"/>
 <cardBlock id="Visa Gold"/>
-<cardBlock id="Visa Gold "Золотой""/>
-<cardBlock id="World MasterCard "Золотой""/>
+<cardBlock id="Visa Gold Золотой"/>
+<cardBlock id="World MasterCard Золотой"/>
 <cardBlock id="MasterCard Mass"/>
 <cardBlock id="MasterCard Gold"/>
 <cardBlock id="Maestro"/>
@@ -632,12 +632,12 @@
 <CardPANRq id="Visa Platinum PREMIER"/>
 <CardPANRq id="MasterCard World Black Edition PREMIER"/>
 <CardPANRq id="Visa Signature"/>
-<CardPANRq id="Visa Gold "Золотой""/>
+<CardPANRq id="Visa Gold Золотой"/>
 <CardPANRq id="Maestro"/>
 <CardPANRq id="MasterCard Standard Бесконтактная"/>
 <CardPANRq id="MasterCard Социальная Бесконтактная"/>
 <CardPANRq id="MIR Premium Plus"/>
-<CardPANRq id="World MasterCard "Золотой""/>
+<CardPANRq id="World MasterCard Золотой"/>
 <CardPANRq id="Electron"/>
 <CardPANRq id="MasterCard Gold"/>
 </CardPANRqList>

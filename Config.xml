@@ -1024,6 +1024,9 @@
 <string>
 вы превысили суточный лимит денежных средств по операциям
 </string>
+<string>
+Обратите внимание! Вы установили лимит на ежедневные
+</string>
 </strings>
 </param>
 <param name="ReplaceableStrings" description="Заменяемые сообщения">
@@ -3963,6 +3966,9 @@ https://www.sberbank.ru/ru/person/help-center/bankrupt
 <param name="integrationPlatform" description="">
 <type>list</type>
 <nodes>
+<node id="greenfield1.online.sberbank.ru">
+<startSessionUFS7>true</startSessionUFS7>
+</node>
 <node id="greenfield2.online.sberbank.ru">
 <startSessionUFS7>true</startSessionUFS7>
 </node>
@@ -4020,7 +4026,7 @@ https://www.sberbank.ru/ru/person/help-center/bankrupt
 </node>
 <node id="greenfield1.online.sberbank.ru">
 <extendedPermissionEnabled>true</extendedPermissionEnabled>
-<disabledPermissions>false</disabledPermissions>
+<disabledPermissions>true</disabledPermissions>
 </node>
 <node id="greenfield2.online.sberbank.ru">
 <extendedPermissionEnabled>true</extendedPermissionEnabled>
@@ -4028,7 +4034,7 @@ https://www.sberbank.ru/ru/person/help-center/bankrupt
 </node>
 <node id="node0.online.sberbank.ru">
 <extendedPermissionEnabled>true</extendedPermissionEnabled>
-<disabledPermissions>false</disabledPermissions>
+<disabledPermissions>true</disabledPermissions>
 </node>
 <node id="node1.online.sberbank.ru">
 <extendedPermissionEnabled>true</extendedPermissionEnabled>
@@ -4079,15 +4085,15 @@ https://www.sberbank.ru/ru/person/help-center/bankrupt
 </param>
 <param name="SpecialTutorialUID" description="Туториалы из списка 'специальные' и должны показываться при каждой регистрации">
 <tutorials>
-<tutorial UID="TutorialIncognitoKey"/>
 <tutorial UID="TutorialAnalyticsAgreement"/>
+<tutorial UID="TutorialIncognitoKey"/>
 <tutorial UID="TutorialStatementsKey"/>
 </tutorials>
 </param>
 <param name="AllowedTutorialUID" description="Туториалы разрешенные к показу">
 <tutorials>
-<tutorial UID="TutorialIncognitoKey"/>
 <tutorial UID="TutorialAnalyticsAgreement"/>
+<tutorial UID="TutorialIncognitoKey"/>
 <tutorial UID="TGPTutorialDataSource"/>
 <tutorial UID="TutorialStatementsKey"/>
 <tutorial UID="TransactionPushTutorialKey"/>
@@ -4879,7 +4885,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <smallPreview>false</smallPreview>
 </mainScreenStories>
 <mainScreenTutorial>
-<enabled>true</enabled>
+<enabled>false</enabled>
 <limit>10</limit>
 <backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
@@ -6106,10 +6112,16 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 </param>
 <param name="mobilePOS" description="Интернет кредитование">
 <POSVersions>
-<version id="9.8">
+<version id="9.9">
 <enabled>true</enabled>
 <loanCalculator>true</loanCalculator>
 <newStatusRoad>true</newStatusRoad>
+<kladrEnabled>true</kladrEnabled>
+<posRuPhone>true</posRuPhone>
+</version>
+<version id="9.8">
+<enabled>true</enabled>
+<loanCalculator>true</loanCalculator>
 <kladrEnabled>true</kladrEnabled>
 </version>
 <version id="default">
@@ -7996,49 +8008,49 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <enabled>true</enabled>
 <nodes>
  <!--
- Параметр imaOfficeChoiseDisabled отключение выбора ВСП при открытии ОМС. Применяется с версии 9.9. 
+ Параметр imaOfficeChoiceDisabled отключение выбора ВСП при открытии ОМС. Применяется с версии 9.9. 
 -->
 <node id="mobile.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="node0.online.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="node1.online.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="node2.online.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="node3.online.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="node4.online.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="greenfield1.online.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="greenfield2.online.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="ift-node2-mp.testonline.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="ift-node3-mp.testonline.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="ift-node4-mp.testonline.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="psinode1.testonline.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 <node id="psinode2.testonline.sberbank.ru">
-<imaOfficeChoiseDisabled>true</imaOfficeChoiseDisabled>
+<imaOfficeChoiceDisabled>true</imaOfficeChoiceDisabled>
 </node>
 </nodes>
 </param>
@@ -8446,9 +8458,9 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <type>list</type>
 <pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
 <nodes>
- 
+
 <node id="ift-node1-mp.testonline.sberbank.ru">
- <newPushProccessing>true</newPushProccessing>
+<showNewAttributesInPushContent>true</showNewAttributesInPushContent>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>
@@ -8463,7 +8475,7 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
 <showUniversalPushNotification>true</showUniversalPushNotification>
 <getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-<nativePushProcessingEnabled>false</nativePushProcessingEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
 <webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
 <cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
 <routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
@@ -9277,6 +9289,9 @@ https://test.stat.online.sberbank.ru/WESTERNUNION/Oferta_Western_Union_a2a.pdf
 <version name="9.7.0">
 <enabled>true</enabled>
 </version>
+<version name="9.7.1">
+<enabled>true</enabled>
+</version>
 </sendVersions>
 <receiveVersions>
 <version name="9.4.0">
@@ -9655,6 +9670,9 @@ https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/tariffs.xml
 https://test.stat.online.sberbank.ru/WESTERNUNION/oferta_western_union.pdf
 </link>
 </links>
+<tarifPlans>
+<tarifPlan id="0"/>
+</tarifPlans>
 <isShortFraudScreen>true</isShortFraudScreen>
 <isLongFraudScreen>false</isLongFraudScreen>
 </param>
@@ -9715,7 +9733,7 @@ https://test.stat.online.sberbank.ru/WESTERNUNION/oferta_western_union.pdf
 </param>
 <param name="ChangeVisibilityProduct" description="Частичное скрытие продукта">
 <type>setting</type>
-<enabled>false</enabled>
+<enabled>true</enabled>
 </param>
 <param name="gsHideDeposits" description="Полное скрытие депозитов">
 <type>setting</type>

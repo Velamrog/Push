@@ -1113,7 +1113,7 @@
 Неверный логин или пароль. Следующая неверная попытка заблокирует вход в Сбербанк Онлайн на 02 мин
 </old>
 <new>
-Вы ввели неверный пароль. Следующая неверная попытка заблокирует вход на 05 мин. Если вы забыли пароль, смените пользователя для повторной регистрации.
+Вы ввели неверный пароль. Следующая неверная попытка заблокирует вход на 02 мин. Если вы забыли пароль, смените пользователя для повторной регистрации.
 </new>
 </string>
 <string>
@@ -2468,7 +2468,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <loanTable>true</loanTable>
 <hideRegion>true</hideRegion>
 <pciDss>true</pciDss>
-<cashByCode>false</cashByCode>
+<cashByCode>true</cashByCode>
 <selfTransfer>false</selfTransfer>
 <selfTransferStorno>false</selfTransferStorno>
 <creditCardAutorepayment>true</creditCardAutorepayment>
@@ -3257,7 +3257,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>true</googleMapsEnabled>
 <messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
-<authBlockingScreen>false</authBlockingScreen>
+<authBlockingScreen>true</authBlockingScreen>
 <PrintAutoSubscriptionTutorialCheck>true</PrintAutoSubscriptionTutorialCheck>
 <balanceFromPush>true</balanceFromPush>
 <PaymentsRequisiteGroupingEnabled>true</PaymentsRequisiteGroupingEnabled>
@@ -3342,7 +3342,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <googleMapsEnabled>true</googleMapsEnabled>
 <messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
-<authBlockingScreen>false</authBlockingScreen>
+<authBlockingScreen>true</authBlockingScreen>
 <PrintAutoSubscriptionTutorialCheck>true</PrintAutoSubscriptionTutorialCheck>
 <balanceFromPush>true</balanceFromPush>
 <PaymentsRequisiteGroupingEnabled>true</PaymentsRequisiteGroupingEnabled>
@@ -3511,7 +3511,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
-<authBlockingScreen>false</authBlockingScreen>
+<authBlockingScreen>true</authBlockingScreen>
 <PrintAutoSubscriptionTutorialCheck>true</PrintAutoSubscriptionTutorialCheck>
 <balanceFromPush>true</balanceFromPush>
 <PaymentsRequisiteGroupingEnabled>true</PaymentsRequisiteGroupingEnabled>
@@ -3595,7 +3595,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <PaymentTransactionsPopUpConfirmNumber>true</PaymentTransactionsPopUpConfirmNumber>
 <soundsInAppEnabled>true</soundsInAppEnabled>
 <messengerFirstLoginEnabled>false</messengerFirstLoginEnabled>
-<authBlockingScreen>false</authBlockingScreen>
+<authBlockingScreen>true</authBlockingScreen>
 <PrintAutoSubscriptionTutorialCheck>true</PrintAutoSubscriptionTutorialCheck>
 <balanceFromPush>true</balanceFromPush>
 <PaymentsRequisiteGroupingEnabled>true</PaymentsRequisiteGroupingEnabled>
@@ -4885,7 +4885,7 @@ http://lightapp.ru/config/salestools/create_target/index.html
 <smallPreview>false</smallPreview>
 </mainScreenStories>
 <mainScreenTutorial>
-<enabled>false</enabled>
+<enabled>true</enabled>
 <limit>10</limit>
 <backendTipsBroker>false</backendTipsBroker>
 </mainScreenTutorial>
@@ -5641,6 +5641,10 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <enabled>true</enabled>
 </param>
 <param name="CarLoansRus" description="Ввод марок/моделей на русском">
+<type>setting</type>
+<enabled>true</enabled>
+</param>
+<param name="CarLoansAutoPay" description="Доступность автоплатежа из детализации АК">
 <type>setting</type>
 <enabled>true</enabled>
 </param>
@@ -8459,9 +8463,8 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
 <nodes>
 
-<node id="ift-node1-mp.testonline.sberbank.ru">
-<newPushProccessing>true</newPushProccessing>
-<showNewAttributesInPushContent>true</showNewAttributesInPushContent>
+ <node id="ift-node1-mp.testonline.sberbank.ru">
+  <newPushProccessing>true</newPushProccessing>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>
@@ -8490,7 +8493,372 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
 <newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
 </node>
+ 
+ <node id="greenfield0.online.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="greenfield1.online.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="node0.online.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="node1.online.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="node2.online.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="node3.online.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="node4.online.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="psinode1.testonline.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="mobile.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>false</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="194.186.207.23">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="ift-node1.testonline.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
+<node id="ift-node2.testonline.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
 
+<node id="ift-node2-mp.testonline.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
 </nodes>
 <bestActions>
 <actions>
@@ -8553,149 +8921,197 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 </param>
 <param name="PlasticCardLifeCycleMessages" description="Информационные сообщения по жизненному циклу карт">
 <type>service</type>
-<enabled>true</enabled>
+<enabled>false</enabled>
 <nodes>
 <node id="node0.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="node1.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="node2.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="node3.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="greenfield1.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="greenfield2.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="mobile.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node1.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node2.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node2-mp.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="psinode2.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="psinode1.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="194.186.207.23">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 </nodes>
 </param>
 <param name="PlasticCardLifeCycleMessagesV2" description="Информационные сообщения по жизненному циклу карт">
 <type>service</type>
-<enabled>true</enabled>
+<enabled>false</enabled>
 <nodes>
 <node id="node0.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="node1.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="node2.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="node3.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="greenfield1.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="greenfield2.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="mobile.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node1.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node2.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node2-mp.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="psinode2.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="psinode1.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="194.186.207.23">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 </nodes>
 </param>
 <param name="PlasticCardLifeCycleDetailMessages" description="Информационные сообщения по жизненному циклу карт внутри">
 <type>service</type>
-<enabled>true</enabled>
+<enabled>false</enabled>
 <nodes>
 <node id="node0.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="node1.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="node2.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="node3.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="greenfield1.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="greenfield2.online.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="mobile.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node1.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node2.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="ift-node2-mp.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="psinode2.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="psinode1.testonline.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="194.186.207.23">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 </nodes>
 </param>
 <param name="PlasticCardLifeCycleOtherCardsMessages" description="Информационные сообщения по жизненному циклу карт внутри 2">
+<type>service</type>
+<enabled>false</enabled>
+<nodes>
+<node id="node0.online.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="node1.online.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="node2.online.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="node3.online.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="greenfield1.online.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="greenfield2.online.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="mobile.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="ift-node1.testonline.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="ift-node2.testonline.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="ift-node1-mp.testonline.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="ift-node2-mp.testonline.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="psinode2.testonline.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="psinode1.testonline.sberbank.ru">
+<enabled>false</enabled>
+</node>
+<node id="194.186.207.23">
+<enabled>false</enabled>
+</node>
+</nodes>
+</param>
+<param name="PlasticCardLifeCycleAllMessages" description="Информационные сообщения по жизненному циклу карт">
 <type>service</type>
 <enabled>true</enabled>
 <nodes>
@@ -9876,6 +10292,51 @@ https://stat.online.sberbank.ru/PhizIC-res/mapicfg/card_tariffs.xml
 <enabled>true</enabled>
 </node>
 <node id="greenfield2.online.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="mobile.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="ift-node1.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="ift-node2.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="ift-node1-mp.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="ift-node2-mp.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="psinode2.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="psinode1.testonline.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="194.186.207.23">
+<enabled>true</enabled>
+</node>
+</nodes>
+</param>
+<param name="MAppCardReissueProcess" description="Досрочный перевыпуск карты">
+<type>service</type>
+<enabled>true</enabled>
+<nodes>
+<node id="node0.online.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="node1.online.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="node2.online.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="node3.online.sberbank.ru">
+<enabled>true</enabled>
+</node>
+<node id="greenfield1.online.sberbank.ru">
 <enabled>true</enabled>
 </node>
 <node id="mobile.sberbank.ru">

@@ -730,11 +730,13 @@
 <cardCvv id="MIR Gold"/>
 </cardCvvList>
 </param>
+<param name="LastDebitCardBlockOffer" description="Включение экрана с предложением перевода / заказа ЦК при блокировке последней ДК">
+<type>service</type>
+<enabled>true</enabled>
+</param>
 <param name="BlockingNotification" description="Карты с выводом нотификации при блокировке">
 <type>service</type>
 <cardBlockList>
-<cardBlock id="Visa Classic"/>
-<cardBlock id="MasterCard Mass"/>
 <cardBlock id="Visa Digital"/>
 </cardBlockList>
 <notification>
@@ -8462,39 +8464,7 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <type>list</type>
 <pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
 <nodes>
-
- <node id="ift-node1-mp.testonline.sberbank.ru">
-  <newPushProccessing>true</newPushProccessing>
-<buttonToPostLogin>true</buttonToPostLogin>
-<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
-<MFMSMessageRequestType>2</MFMSMessageRequestType>
-<NotificationSettingsOwn>true</NotificationSettingsOwn>
-<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
-<TurnOffOperationPush>true</TurnOffOperationPush>
-<MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
-<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
-<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
-<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
-<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
-<showUniversalPushNotification>true</showUniversalPushNotification>
-<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
-<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
-<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
-<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
-<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
-<pushLogoTypeUsing>true</pushLogoTypeUsing>
-<UsePushAutoDisable>true</UsePushAutoDisable>
-<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
-<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
-<PUSHNotificationsTransactionContentExtension>true</PUSHNotificationsTransactionContentExtension>
-<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
-<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
-<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
-<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
-</node>
- 
- <node id="greenfield0.online.sberbank.ru">
+<node id="greenfield0.online.sberbank.ru">
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>
@@ -8734,7 +8704,7 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <showUniversalPushNotification>true</showUniversalPushNotification>
 <getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
 <nativePushProcessingEnabled>true</nativePushProcessingEnabled>
-<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<webUrlInUniversalPushNotification>false</webUrlInUniversalPushNotification>
 <cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
 <routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
 <pushLogoTypeUsing>true</pushLogoTypeUsing>
@@ -8830,7 +8800,35 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
 <newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
 </node>
-
+<node id="ift-node1-mp.testonline.sberbank.ru">
+<buttonToPostLogin>true</buttonToPostLogin>
+<pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
+<MFMSMessageRequestType>2</MFMSMessageRequestType>
+<NotificationSettingsOwn>true</NotificationSettingsOwn>
+<autoTurnOffOperationPush>true</autoTurnOffOperationPush>
+<TurnOffOperationPush>true</TurnOffOperationPush>
+<MessagesWithExpired>true</MessagesWithExpired>
+<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
+<showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
+<newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
+<showAlertBeforeTPUDisable>true</showAlertBeforeTPUDisable>
+<showUniversalPushNotification>true</showUniversalPushNotification>
+<getMessageHistoryRequestEnabled>true</getMessageHistoryRequestEnabled>
+<nativePushProcessingEnabled>true</nativePushProcessingEnabled>
+<webUrlInUniversalPushNotification>true</webUrlInUniversalPushNotification>
+<cardNotificationWithSenderNameAndComment>true</cardNotificationWithSenderNameAndComment>
+<routingFromTransactionPushToMessengerEnabled>true</routingFromTransactionPushToMessengerEnabled>
+<pushLogoTypeUsing>true</pushLogoTypeUsing>
+<UsePushAutoDisable>true</UsePushAutoDisable>
+<reactivateMainPushNotifications>true</reactivateMainPushNotifications>
+<hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
+<PUSHNotificationsTransactionContentExtension>true</PUSHNotificationsTransactionContentExtension>
+<XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
+<transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
+</node>
 <node id="ift-node2-mp.testonline.sberbank.ru">
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
@@ -8916,198 +8914,6 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 </node>
 <node id="194.186.207.23">
 <enabled>true</enabled>
-</node>
-</nodes>
-</param>
-<param name="PlasticCardLifeCycleMessages" description="Информационные сообщения по жизненному циклу карт">
-<type>service</type>
-<enabled>false</enabled>
-<nodes>
-<node id="node0.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node1.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node2.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node3.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="greenfield1.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="greenfield2.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="mobile.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node1.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node2.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node1-mp.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node2-mp.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="psinode2.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="psinode1.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="194.186.207.23">
-<enabled>false</enabled>
-</node>
-</nodes>
-</param>
-<param name="PlasticCardLifeCycleMessagesV2" description="Информационные сообщения по жизненному циклу карт">
-<type>service</type>
-<enabled>false</enabled>
-<nodes>
-<node id="node0.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node1.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node2.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node3.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="greenfield1.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="greenfield2.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="mobile.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node1.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node2.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node1-mp.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node2-mp.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="psinode2.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="psinode1.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="194.186.207.23">
-<enabled>false</enabled>
-</node>
-</nodes>
-</param>
-<param name="PlasticCardLifeCycleDetailMessages" description="Информационные сообщения по жизненному циклу карт внутри">
-<type>service</type>
-<enabled>false</enabled>
-<nodes>
-<node id="node0.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node1.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node2.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node3.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="greenfield1.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="greenfield2.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="mobile.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node1.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node2.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node1-mp.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node2-mp.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="psinode2.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="psinode1.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="194.186.207.23">
-<enabled>false</enabled>
-</node>
-</nodes>
-</param>
-<param name="PlasticCardLifeCycleOtherCardsMessages" description="Информационные сообщения по жизненному циклу карт внутри 2">
-<type>service</type>
-<enabled>false</enabled>
-<nodes>
-<node id="node0.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node1.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node2.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="node3.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="greenfield1.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="greenfield2.online.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="mobile.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node1.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node2.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node1-mp.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="ift-node2-mp.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="psinode2.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="psinode1.testonline.sberbank.ru">
-<enabled>false</enabled>
-</node>
-<node id="194.186.207.23">
-<enabled>false</enabled>
 </node>
 </nodes>
 </param>

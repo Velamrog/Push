@@ -8788,6 +8788,7 @@ https://nginx-ios.ift-node5.testonline.sberbank.ru/
 <reactivateMainPushNotifications2>true</reactivateMainPushNotifications2>
 <transactionNewTutorialAvailable>true</transactionNewTutorialAvailable>
  <showNewAttributesInPushContent>true</showNewAttributesInPushContent>
+ <PUSHNotificationsTransactionContentExtension>true</PUSHNotificationsTransactionContentExtension>
 </node>
 
 <node id="ift-node1-mp.testonline.sberbank.ru">

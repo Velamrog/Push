@@ -2538,7 +2538,7 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 
 <node id="mobile.sberbank.ru">
 <pushAlertEnabled>true</pushAlertEnabled>
-<efsMobileBank>false</efsMobileBank>
+<efsMobileBank>true</efsMobileBank>
 </node>
 </nodes>
 </param>

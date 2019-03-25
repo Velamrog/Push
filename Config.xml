@@ -2528,11 +2528,11 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <nodes>
 
 <node id="ift-node1-mp.testonline.sberbank.ru">
-<efsMobileBank>true</efsMobileBank>
+<efsMobileBank>false</efsMobileBank>
 <pushAlertEnabled>true</pushAlertEnabled>
 </node>
 <node id="ift-node2-mp.testonline.sberbank.ru">
-<efsMobileBank>true</efsMobileBank>
+<efsMobileBank>false</efsMobileBank>
 <pushAlertEnabled>true</pushAlertEnabled>
 </node>
 

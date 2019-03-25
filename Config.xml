@@ -8784,9 +8784,13 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <param name="PushPermissions" description="единый стек параметров для push">
 <type>list</type>
 <pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+ <pushHistoryHeadBatchSize>30</pushHistoryHeadBatchSize> 
+<pushHistoryScrollBatchSize>15</pushHistoryScrollBatchSize>
 <nodes>
 
 <node id="mobile.sberbank.ru">
+<forcedHistoryQuery>false</forcedHistoryQuery> 
+<forcedHistoryQueryIfNoHistory>false</forcedHistoryQueryIfNoHistory> 
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>

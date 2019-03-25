@@ -8811,7 +8811,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
 <XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
 <transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
-<pushGlobalSearchByKeywords>false</pushGlobalSearchByKeywords>
+<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
 <newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
 <reactivateMainPushNotifications2>true</reactivateMainPushNotifications2>
 <transactionNewTutorialAvailable>true</transactionNewTutorialAvailable>

@@ -3210,7 +3210,8 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <feedbackMenuItemEnabled>true</feedbackMenuItemEnabled>
 </node>
 <node id="mobile.sberbank.ru">
-<coreQR>true</coreQR>
+<productNavigationBarMod>3</productNavigationBarMod>
+ <coreQR>true</coreQR>
 <SBTelecom>true</SBTelecom>
 <CreditRating>false</CreditRating>
 <CreditRating_v2>false</CreditRating_v2>
@@ -7862,7 +7863,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 </param>
 <param name="notificationStripeFilter" description="">
 <type>setting</type>
-<enabled>true</enabled>
+<enabled>false</enabled>
 <nodes>
 <node id="node0.online.sberbank.ru">
 <enabled>true</enabled>

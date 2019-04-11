@@ -8239,7 +8239,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 </param>
 <param name="notificationStripeFilter" description="">
 <type>setting</type>
-<enabled>false</enabled>
+<enabled>true</enabled>
 <nodes>
 <node id="node0.online.sberbank.ru">
 <enabled>true</enabled>
@@ -8254,7 +8254,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <enabled>true</enabled>
 </node>
 <node id="mobile.sberbank.ru">
-<enabled>true</enabled>
+<enabled>false</enabled>
 </node>
 <node id="194.186.207.23">
 <enabled>true</enabled>

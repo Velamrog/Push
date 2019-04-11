@@ -9233,6 +9233,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <nodes>
 
 <node id="mobile.sberbank.ru">
+ <showNewAttributesInPushContent>true</showNewAttributesInPushContent>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>

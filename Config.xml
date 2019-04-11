@@ -2593,22 +2593,46 @@ https://test.stat.online.sberbank.ru/Dialogues/SberkotNewYear.mp4
 <pushAlertTimeInterval>86400</pushAlertTimeInterval>
 <efsMobileBank>true</efsMobileBank>
 <nodes>
-
+<node id="ift-node1.testonline.sberbank.ru">
+<efsMobileBank>true</efsMobileBank>
+</node>
+<node id="ift-node2.testonline.sberbank.ru">
+<efsMobileBank>true</efsMobileBank>
+</node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
 <efsMobileBank>true</efsMobileBank>
 <pushAlertEnabled>true</pushAlertEnabled>
 </node>
- 
 <node id="ift-node2-mp.testonline.sberbank.ru">
 <efsMobileBank>true</efsMobileBank>
 <pushAlertEnabled>true</pushAlertEnabled>
 </node>
-
+<node id="node0.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+</node>
+<node id="node1.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+</node>
+<node id="node2.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+</node>
+<node id="node3.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+</node>
+<node id="greenfield1.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+<efsMobileBank>true</efsMobileBank>
+</node>
+<node id="greenfield2.online.sberbank.ru">
+<pushAlertEnabled>true</pushAlertEnabled>
+</node>
+<node id="194.186.207.23">
+<pushAlertEnabled>true</pushAlertEnabled>
+</node>
 <node id="mobile.sberbank.ru">
 <pushAlertEnabled>true</pushAlertEnabled>
 <efsMobileBank>true</efsMobileBank>
 </node>
- 
 </nodes>
 </param>
 <param name="CorePermissions" description="">
@@ -9216,7 +9240,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <autoTurnOffOperationPush>true</autoTurnOffOperationPush>
 <TurnOffOperationPush>true</TurnOffOperationPush>
 <MessagesWithExpired>true</MessagesWithExpired>
-<showBestActionsInCuteCheque>true</showBestActionsInCuteCheque>
+<showBestActionsInCuteCheque>false</showBestActionsInCuteCheque>
 <showNotificationEntryPointTargetTapPrelogin>true</showNotificationEntryPointTargetTapPrelogin>
 <showNotificationEntryPointTargetTapPostlogin>true</showNotificationEntryPointTargetTapPostlogin>
 <newRejectAuthorizeAlert>true</newRejectAuthorizeAlert>
@@ -9233,7 +9257,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <hideMainPushNotificationsSwitcher>true</hideMainPushNotificationsSwitcher>
 <XMLHeaderEncodingFix>true</XMLHeaderEncodingFix>
 <transferTPUSettingsOnNewRegistration>true</transferTPUSettingsOnNewRegistration>
-<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<pushGlobalSearchByKeywords>false</pushGlobalSearchByKeywords>
 <newAlertWhenTPUActivate>true</newAlertWhenTPUActivate>
 <reactivateMainPushNotifications2>true</reactivateMainPushNotifications2>
 <transactionNewTutorialAvailable>true</transactionNewTutorialAvailable>
@@ -9345,7 +9369,7 @@ consumer-loan/v1/mobile/banking/products/loans/requests/list
 <name>Зачисления</name>
 <type>transaction</type>
 <operationTypes>
-* # 6 7 A A0 A1 B C D D1 D3 D7 E I L N P Q R2 R3 R4 R5 R6 R7 R8 R9 RA RB RC RD RE RU S U
+* # @ & ) ] 6 7 A A0 A1 B C D D1 D3 D7 E I L N P Q R2 R3 R4 R5 R6 R7 R8 R9 RA RB RC RD RE RU S U
 </operationTypes>
 </NotificationsListFilter>
 <NotificationsListFilter>
@@ -9680,9 +9704,8 @@ https://stat.online.sberbank.ru/PhizIC-res/IMG/PU/20/63/61/2b26d928c6b985710071f
 <type>list</type>
 <MobileBankColdPeriodDuration>7 дней</MobileBankColdPeriodDuration>
 <nodes>
-
-<node id="mobile.sberbank.ru">
-<mobileBankFromSetting>false</mobileBankFromSetting>
+<node id="greenfield0.online.sberbank.ru">
+<mobileBankFromSetting>true</mobileBankFromSetting>
 <mobileBankFromCardSetting>true</mobileBankFromCardSetting>
 <CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
 <mobileBankChangePhone>true</mobileBankChangePhone>
@@ -9690,7 +9713,60 @@ https://stat.online.sberbank.ru/PhizIC-res/IMG/PU/20/63/61/2b26d928c6b985710071f
 <ShowNotificationTerm>true</ShowNotificationTerm>
 <mobileBankActivateFlow_2>true</mobileBankActivateFlow_2>
 </node>
-
+<node id="greenfield1.online.sberbank.ru">
+<mobileBankFromSetting>true</mobileBankFromSetting>
+<mobileBankFromCardSetting>true</mobileBankFromCardSetting>
+<CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
+<mobileBankChangePhone>true</mobileBankChangePhone>
+<FullTariffTurnOffEnabled>true</FullTariffTurnOffEnabled>
+<ShowNotificationTerm>true</ShowNotificationTerm>
+<mobileBankActivateFlow_2>true</mobileBankActivateFlow_2>
+</node>
+<node id="psinode1.testonline.sberbank.ru">
+<mobileBankFromSetting>true</mobileBankFromSetting>
+<mobileBankFromCardSetting>true</mobileBankFromCardSetting>
+<CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
+<mobileBankChangePhone>true</mobileBankChangePhone>
+<FullTariffTurnOffEnabled>true</FullTariffTurnOffEnabled>
+<ShowNotificationTerm>true</ShowNotificationTerm>
+<mobileBankActivateFlow_2>true</mobileBankActivateFlow_2>
+</node>
+<node id="mobile.sberbank.ru">
+<mobileBankFromSetting>true</mobileBankFromSetting>
+<mobileBankFromCardSetting>true</mobileBankFromCardSetting>
+<CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
+<mobileBankChangePhone>true</mobileBankChangePhone>
+<FullTariffTurnOffEnabled>true</FullTariffTurnOffEnabled>
+<ShowNotificationTerm>true</ShowNotificationTerm>
+<mobileBankActivateFlow_2>true</mobileBankActivateFlow_2>
+</node>
+<node id="194.186.207.23">
+<mobileBankFromSetting>true</mobileBankFromSetting>
+<mobileBankFromCardSetting>true</mobileBankFromCardSetting>
+<CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
+<mobileBankChangePhone>true</mobileBankChangePhone>
+<FullTariffTurnOffEnabled>true</FullTariffTurnOffEnabled>
+<ShowNotificationTerm>true</ShowNotificationTerm>
+<mobileBankActivateFlow_2>true</mobileBankActivateFlow_2>
+</node>
+<node id="ift-node1.testonline.sberbank.ru">
+<mobileBankFromSetting>true</mobileBankFromSetting>
+<mobileBankFromCardSetting>true</mobileBankFromCardSetting>
+<CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
+<mobileBankChangePhone>true</mobileBankChangePhone>
+<FullTariffTurnOffEnabled>true</FullTariffTurnOffEnabled>
+<ShowNotificationTerm>true</ShowNotificationTerm>
+<mobileBankActivateFlow_2>true</mobileBankActivateFlow_2>
+</node>
+<node id="ift-node2.testonline.sberbank.ru">
+<mobileBankFromSetting>true</mobileBankFromSetting>
+<mobileBankFromCardSetting>true</mobileBankFromCardSetting>
+<CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
+<mobileBankChangePhone>true</mobileBankChangePhone>
+<FullTariffTurnOffEnabled>true</FullTariffTurnOffEnabled>
+<ShowNotificationTerm>true</ShowNotificationTerm>
+<mobileBankActivateFlow_2>true</mobileBankActivateFlow_2>
+</node>
 <node id="ift-node1-mp.testonline.sberbank.ru">
 <mobileBankFromSetting>true</mobileBankFromSetting>
 <mobileBankFromCardSetting>true</mobileBankFromCardSetting>

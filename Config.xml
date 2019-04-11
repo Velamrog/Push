@@ -9694,35 +9694,9 @@ https://stat.online.sberbank.ru/PhizIC-res/IMG/PU/20/63/61/2b26d928c6b985710071f
 <type>list</type>
 <MobileBankColdPeriodDuration>7 дней</MobileBankColdPeriodDuration>
 <nodes>
-<node id="greenfield0.online.sberbank.ru">
-<mobileBankFromSetting>true</mobileBankFromSetting>
-<mobileBankFromCardSetting>true</mobileBankFromCardSetting>
-<CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
-<mobileBankChangePhone>true</mobileBankChangePhone>
-<FullTariffTurnOffEnabled>true</FullTariffTurnOffEnabled>
-<ShowNotificationTerm>true</ShowNotificationTerm>
-<mobileBankActivateFlow_2>true</mobileBankActivateFlow_2>
-</node>
-<node id="greenfield1.online.sberbank.ru">
-<mobileBankFromSetting>true</mobileBankFromSetting>
-<mobileBankFromCardSetting>true</mobileBankFromCardSetting>
-<CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
-<mobileBankChangePhone>true</mobileBankChangePhone>
-<FullTariffTurnOffEnabled>true</FullTariffTurnOffEnabled>
-<ShowNotificationTerm>true</ShowNotificationTerm>
-<mobileBankActivateFlow_2>true</mobileBankActivateFlow_2>
-</node>
-<node id="psinode1.testonline.sberbank.ru">
-<mobileBankFromSetting>true</mobileBankFromSetting>
-<mobileBankFromCardSetting>true</mobileBankFromCardSetting>
-<CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
-<mobileBankChangePhone>true</mobileBankChangePhone>
-<FullTariffTurnOffEnabled>true</FullTariffTurnOffEnabled>
-<ShowNotificationTerm>true</ShowNotificationTerm>
-<mobileBankActivateFlow_2>true</mobileBankActivateFlow_2>
-</node>
+
 <node id="mobile.sberbank.ru">
-<mobileBankFromSetting>true</mobileBankFromSetting>
+<mobileBankFromSetting>false</mobileBankFromSetting>
 <mobileBankFromCardSetting>true</mobileBankFromCardSetting>
 <CardPhoneListCacheEnabled>true</CardPhoneListCacheEnabled>
 <mobileBankChangePhone>true</mobileBankChangePhone>

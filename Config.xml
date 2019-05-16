@@ -7782,7 +7782,7 @@ https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/sRus.json
 		</param>
 		<param name="notificationStripeFilter" description="">
 			<type>setting</type>
-			<enabled>true</enabled>
+			<enabled>false</enabled>
 			<nodes>
 				
 				<node id="mobile.sberbank.ru">

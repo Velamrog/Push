@@ -42,27 +42,7 @@
 			<type>setting</type>
 			<enabled>true</enabled>
 			<nodes>
-				<node id="node0.online.sberbank.ru">
-					<enabled>true</enabled>
-				</node>
-				<node id="node1.online.sberbank.ru">
-					<enabled>true</enabled>
-				</node>
-				<node id="node2.online.sberbank.ru">
-					<enabled>true</enabled>
-				</node>
-				<node id="node3.online.sberbank.ru">
-					<enabled>true</enabled>
-				</node>
-				<node id="node4.online.sberbank.ru">
-					<enabled>true</enabled>
-				</node>
-				<node id="greenfield1.online.sberbank.ru">
-					<enabled>true</enabled>
-				</node>
-				<node id="greenfield2.online.sberbank.ru">
-					<enabled>true</enabled>
-				</node>
+				
 				<node id="ift-node1-mp.testonline.sberbank.ru" description="Стенд ИФТ блок 1 (мобильный)">
 					<enabled>true</enabled>
 				</node>

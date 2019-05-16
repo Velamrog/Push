@@ -9924,6 +9924,9 @@ https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/sRus.json
 			<pushHistoryScrollBatchSize>50</pushHistoryScrollBatchSize>
 			<nodes>
 				<node id="mobile.sberbank.ru">
+<showUniversalPushNotification>
+<version from="9.0" value="true"/>
+</showUniversalPushNotification>
 					<showNewAttributesInPushContent>true</showNewAttributesInPushContent>
 					<newFailedOperationDesign>true</newFailedOperationDesign>
 					<buttonToPostLogin>true</buttonToPostLogin>

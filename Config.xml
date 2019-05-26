@@ -10324,6 +10324,7 @@ https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/CarLoansRus.json
 <nodes>
 
 <node id="mobile.sberbank.ru">
+<showNewAttributesInPushContent>true</showNewAttributesInPushContent>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>
@@ -10370,6 +10371,7 @@ https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/CarLoansRus.json
 </node>
 
 <node id="ift-node1-mp.testonline.sberbank.ru">
+<showNewAttributesInPushContent>true</showNewAttributesInPushContent>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>
@@ -10417,6 +10419,7 @@ https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/CarLoansRus.json
 </node>
 
 <node id="ift-node2-mp.testonline.sberbank.ru">
+<showNewAttributesInPushContent>true</showNewAttributesInPushContent>
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>

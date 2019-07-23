@@ -11890,7 +11890,10 @@ https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/CarLoansRus.json
 <fbEqualCount>false</fbEqualCount>
 <nodes>
 
-<node id="mobile.sberbank.ru">
+<node id="ift-node1-mp.testonline.sberbank.ru">
+ 
+ <NewLocalNotificationContent>true</NewLocalNotificationContent>
+ 
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>
 <MFMSMessageRequestType>2</MFMSMessageRequestType>

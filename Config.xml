@@ -11893,6 +11893,7 @@ https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/CarLoansRus.json
 <node id="ift-node1-mp.testonline.sberbank.ru">
  
  <NewLocalNotificationContent>true</NewLocalNotificationContent>
+  <newPushProccessing>true</newPushProccessing>
  
 <buttonToPostLogin>true</buttonToPostLogin>
 <pushHistoryAvailableInTabbarBank>true</pushHistoryAvailableInTabbarBank>

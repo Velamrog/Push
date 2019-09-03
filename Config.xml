@@ -13833,7 +13833,7 @@ https://test.stat.online.sberbank.ru/PhizIC-res/mapicfg/CarLoansRus.json
 <enabled>true</enabled>
 </param>
 <param name="PushPermissions" description="единый стек параметров для push">
-<pushGlobalSearchByKeywords>true</pushGlobalSearchByKeywords>
+<pushGlobalSearchByKeywords>false</pushGlobalSearchByKeywords>
 <pushHistoryHeadBatchSize>50</pushHistoryHeadBatchSize>
 <pushHistoryScrollBatchSize>50</pushHistoryScrollBatchSize>
 <countFbQualityDemonstration>3</countFbQualityDemonstration>
